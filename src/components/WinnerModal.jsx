@@ -1,7 +1,10 @@
 import { Square } from "./Square";
+import { TURNS } from "../constants";
 export function WinnerModal({winner, resetJuego}){
     if (winner === null) return null
-    const winnerText = winner === false ? 'Empate':'Ganó: ';
+    const winnerText = (winner===TURNS.x) ? 'Ganaste!':
+                       (winner === TURNS.o)?'Perdiste!':
+                                            'Empate'
     return(
       <section className='winner'>
           <div className='text'>

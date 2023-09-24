@@ -118,7 +118,7 @@ function App() {
   }
   return (    
     <div className='cuerpo'>
-      <section className='Fichas'>
+      <section className='Fichas in-flex'>
         <h1>Ficha Jugador</h1>
         <section className={TableroClass}>
           {
@@ -144,7 +144,7 @@ function App() {
           }
         </section>
       </section>
-      <main className="board">
+      <main className="board in-flex">
         <h1>Tik Tak Toe</h1>
         <button onClick={empezarJuego}>Empezar Juego</button>
         <button onClick={resetJuego}>Reset del juego</button>

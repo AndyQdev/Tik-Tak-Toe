@@ -30,10 +30,14 @@ body {
   box-sizing: border-box;
 }
 
+.in-flex{
+  min-width: 250px;
+}
 .cuerpo{
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .Tablero{
   pointer-events: none;
